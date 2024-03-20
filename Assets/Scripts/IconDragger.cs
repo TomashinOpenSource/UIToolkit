@@ -71,14 +71,25 @@ public class IconDragger : MouseManipulator
     {
         if (!isActive || !target.HasMouseCapture()) return;
         
-        dragArea.style.display = DisplayStyle.None;
-        iconContainer.Add(target);
+        if (target.worldBound.Overlaps(dropZone.worldBound))
+        {
+            dropZone.Add(target);
+            
+            target.style.top = dropZone.contentRect.center.y - target.layout.height / 2;
+            target.style.left = dropZone.contentRect.center.x - target.layout.width / 2;
+        }
+        else
+        {
+            iconContainer.Add(target);
         
-        target.style.top = elemStartPosLocal.y - iconContainer.contentRect.position.y;
-        target.style.left = elemStartPosLocal.x - iconContainer.contentRect.position.x;
+            target.style.top = elemStartPosLocal.y - iconContainer.contentRect.position.y;
+            target.style.left = elemStartPosLocal.x - iconContainer.contentRect.position.x;
+        }
 
         isActive = false;
         target.ReleaseMouse();
         evt.StopPropagation();
+        
+        dragArea.style.display = DisplayStyle.None;
     }
 }
