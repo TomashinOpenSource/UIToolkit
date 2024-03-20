@@ -16,7 +16,18 @@
                 <ui:VisualElement name="Scores" style="flex-grow: 0; width: 70%;">
                     <ui:Label tabindex="-1" text="Score 123" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 30px; color: rgb(0, 0, 0); -unity-font-definition: resource(&apos;fonts/AlumniSansPinstripe-Regular SDF&apos;);" />
                 </ui:VisualElement>
-                <ui:VisualElement name="IconBoard" style="flex-grow: 0; width: 70%; height: 70%; border-top-width: 20px; border-right-width: 20px; border-bottom-width: 20px; border-left-width: 20px; border-left-color: rgb(83, 78, 79); border-right-color: rgb(83, 78, 79); border-top-color: rgb(83, 78, 79); border-bottom-color: rgb(83, 78, 79); border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;" />
+                <ui:VisualElement name="IconBoard" style="flex-grow: 0; width: 70%; height: 70%; border-top-width: 20px; border-right-width: 20px; border-bottom-width: 20px; border-left-width: 20px; border-left-color: rgb(83, 78, 79); border-right-color: rgb(83, 78, 79); border-top-color: rgb(83, 78, 79); border-bottom-color: rgb(83, 78, 79); border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;">
+                    <ui:VisualElement style="flex-grow: 0; width: 64px; height: 64px; background-image: resource(&apos;img/arc&apos;); background-color: rgba(0, 0, 0, 0); position: absolute; top: 32px; left: 509px;" />
+                    <ui:VisualElement style="flex-grow: 0; width: 64px; height: 64px; background-image: resource(&apos;img/arc&apos;); background-color: rgba(0, 0, 0, 0); position: absolute; top: 177px; left: 462px;" />
+                    <ui:VisualElement style="flex-grow: 0; width: 64px; height: 64px; background-image: resource(&apos;img/arc&apos;); background-color: rgba(0, 0, 0, 0); position: absolute; top: 37px; left: 70px;" />
+                    <ui:VisualElement style="flex-grow: 0; width: 64px; height: 64px; background-image: resource(&apos;img/arc&apos;); background-color: rgba(0, 0, 0, 0); position: absolute; top: 223px; left: 104px;" />
+                    <ui:VisualElement style="flex-grow: 0; width: 64px; height: 64px; background-image: resource(&apos;img/arc&apos;); background-color: rgba(0, 0, 0, 0); position: absolute; top: 63px; left: 275px;" />
+                    <ui:VisualElement style="flex-grow: 0; width: 64px; height: 64px; background-image: resource(&apos;img/arc&apos;); background-color: rgba(0, 0, 0, 0); position: absolute; top: 350px; left: 170px;" />
+                    <ui:VisualElement style="flex-grow: 0; width: 64px; height: 64px; background-image: resource(&apos;img/arc&apos;); background-color: rgba(0, 0, 0, 0); position: absolute; top: 347px; left: 436px;" />
+                    <ui:VisualElement style="flex-grow: 0; width: 64px; height: 64px; background-image: resource(&apos;img/arc&apos;); background-color: rgba(0, 0, 0, 0); position: absolute; top: 208px; left: 279px;" />
+                    <ui:VisualElement style="flex-grow: 0; width: 64px; height: 64px; background-image: resource(&apos;img/arc&apos;); background-color: rgba(0, 0, 0, 0); position: absolute; top: 338px; left: 43px;" />
+                    <ui:VisualElement style="flex-grow: 0; width: 64px; height: 64px; background-image: resource(&apos;img/arc&apos;); background-color: rgba(0, 0, 0, 0); position: absolute; top: 331px; left: 305px;" />
+                </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="AnswerContainer" style="flex-grow: 1; flex-basis: 100%; align-items: center; justify-content: center;">
                 <ui:VisualElement name="AnswerBoard" style="flex-grow: 0; width: 70%; height: 70%;">
