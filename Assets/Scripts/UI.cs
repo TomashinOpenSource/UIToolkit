@@ -68,6 +68,11 @@ public class UI : MonoBehaviour
         }
     }
 
+    public void SetTimer(string seconds)
+    {
+        timeLabel.text = seconds + " seconds left";
+    }
+
     public void SetHint(string hintText)
     {
         hint.text = hintText;
