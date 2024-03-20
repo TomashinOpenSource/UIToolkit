@@ -20,7 +20,7 @@ public class UI : MonoBehaviour
     
     private void OnEnable()
     {
-        VisualElement root = GetComponent<UIDocument>().rootVisualElement;
+        root = GetComponent<UIDocument>().rootVisualElement;
         
         hint = root.Q<Label>("Hint");
         hintNumLabel = root.Q<Label>("HintNum");
@@ -39,6 +39,7 @@ public class UI : MonoBehaviour
         {
             controller.HandleWrongAnswer();
         };
+        Setup.Initialize(root);
     }
 
     public void SetHint(string hintText)

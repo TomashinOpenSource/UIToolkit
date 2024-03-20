@@ -27,7 +27,6 @@
                     <ui:VisualElement style="flex-grow: 0; width: 64px; height: 64px; background-image: resource(&apos;img/arc&apos;); background-color: rgba(0, 0, 0, 0); position: absolute; top: 208px; left: 279px;" />
                     <ui:VisualElement style="flex-grow: 0; width: 64px; height: 64px; background-image: resource(&apos;img/arc&apos;); background-color: rgba(0, 0, 0, 0); position: absolute; top: 338px; left: 43px;" />
                     <ui:VisualElement style="flex-grow: 0; width: 64px; height: 64px; background-image: resource(&apos;img/arc&apos;); background-color: rgba(0, 0, 0, 0); position: absolute; top: 331px; left: 305px;" />
-                    <ui:VisualElement name="TestIcon" style="flex-grow: 0; width: 64px; height: 64px; background-image: resource(&apos;img/arc&apos;); background-color: rgba(0, 0, 0, 0); position: absolute; top: -22px; left: 582px;" />
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="AnswerContainer" style="flex-grow: 1; flex-basis: 100%; align-items: center; justify-content: center;">
