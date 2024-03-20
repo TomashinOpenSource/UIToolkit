@@ -226,6 +226,8 @@ GameObject:
   - component: {fileID: 1567733132}
   - component: {fileID: 1567733131}
   - component: {fileID: 1567733133}
+  - component: {fileID: 1567733135}
+  - component: {fileID: 1567733134}
   m_Layer: 5
   m_Name: UIDocument
   m_TagString: Untagged
@@ -276,6 +278,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 032862d382eaebd4abce50aa1d86e2f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controller: {fileID: 1567733134}
+--- !u!114 &1567733134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567733130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e40519b5097cf3c45b843553be020013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  game: {fileID: 1567733135}
+  ui: {fileID: 1567733133}
+--- !u!114 &1567733135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567733130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9890624aed2f0da4b9c186dd66b9b1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questions:
+  - {fileID: 11400000, guid: 9e1128e8dfa673f4b83b09be82046c32, type: 2}
+  - {fileID: 11400000, guid: 2cc50a416382ad746a2462f2e0fa5e60, type: 2}
+  - {fileID: 11400000, guid: 4255205dd3b16e643b75c6b35f19b856, type: 2}
+  - {fileID: 11400000, guid: 98a38eabd8d3ba64a97b373ce71617f2, type: 2}
+  - {fileID: 11400000, guid: effa6b8f2b477a644bc1dc86a2c81171, type: 2}
+  - {fileID: 11400000, guid: 6a3402a230c08c44795b2e18627ae29a, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
