@@ -25,7 +25,7 @@ public class Game : MonoBehaviour
 
     public void HandleCorrectAnswer()
     {
-        
+        NextQuestion();
     }
     public void HandleWrongAnswer()
     {

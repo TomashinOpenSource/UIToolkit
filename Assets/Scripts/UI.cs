@@ -39,7 +39,7 @@ public class UI : MonoBehaviour
         {
             controller.HandleWrongAnswer();
         };
-        Setup.InitializeDragDrop(root);
+        Setup.InitializeDragDrop(root, controller);
         Setup.InitializeIcons(root, controller.getAllQuestions());
     }
 
