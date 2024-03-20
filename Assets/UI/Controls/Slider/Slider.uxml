@@ -1,7 +1,0 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/Controls/Slider/Slider.uss?fileID=7433441132597879392&amp;guid=a9896d7d6bd983f4db7ea8e9b3214179&amp;type=3#Slider" />
-    <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgb(59, 179, 226); padding-top: 5%; padding-right: 5%; padding-bottom: 5%; padding-left: 5%; align-self: stretch; align-items: center;">
-        <ui:Slider label="Slider" high-value="100" low-value="0" direction="Horizontal" name="MySlider" show-input-field="false" style="-unity-font-style: bold; width: 457px;" />
-        <ui:VisualElement name="Box" style="flex-grow: 0; width: 100px; height: 100px; background-color: rgb(255, 0, 0);" />
-    </ui:VisualElement>
-</ui:UXML>
