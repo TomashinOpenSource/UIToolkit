@@ -30,6 +30,15 @@ public class UI : MonoBehaviour
         answer_indicator = root.Q<Label>("AnswerIndicator");
         highscoreLabel = root.Q<Label>("Highscore");
         currentscoreLabel = root.Q<Label>("Myscore");
+
+        Initialize();
+    }
+    private void Initialize()
+    {
+        nextHintButton.clicked += () =>
+        {
+            controller.HandleWrongAnswer();
+        };
     }
 
     public void SetHint(string hintText)
