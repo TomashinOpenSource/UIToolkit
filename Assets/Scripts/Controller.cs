@@ -37,4 +37,9 @@ public class Controller : MonoBehaviour
         ui.SetHintNum(game.getCurrentHintNum());
         ui.SetQuestionNumber(game.getCurrentQuestionNum());
     }
+    
+    public List<Question> getAllQuestions()
+    {
+        return game.questions;
+    }
 }

@@ -39,7 +39,8 @@ public class UI : MonoBehaviour
         {
             controller.HandleWrongAnswer();
         };
-        Setup.Initialize(root);
+        Setup.InitializeDragDrop(root);
+        Setup.InitializeIcons(root, controller.getAllQuestions());
     }
 
     public void SetHint(string hintText)

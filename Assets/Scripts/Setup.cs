@@ -5,13 +5,7 @@ using UnityEngine.UIElements;
 
 public class Setup
 {
-    public static void Initialize(VisualElement root)
-    {
-        InitializeDragDrop(root);
-        InitializeIcons(root);
-    }
-
-    static void InitializeDragDrop(VisualElement root)
+    public static void InitializeDragDrop(VisualElement root)
     {
         root.Query<VisualElement>("IconBoard")
             .Children<VisualElement>()
@@ -21,8 +15,18 @@ public class Setup
             });
     }
 
-    static void InitializeIcons(VisualElement root)
+    public static void InitializeIcons(VisualElement root, List<Question> questions)
     {
-        
+        int currentIconIndex = 0;
+        //root.Query<VisualElement>("IconBoard").Children<VisualElement>().ForEach(element => element.style.display = DisplayStyle.None);
+        foreach (Question question in questions)
+        {
+            VisualElement questionIcon = root.Query<VisualElement>("IconBoard").Children<VisualElement>().AtIndex(currentIconIndex);
+            questionIcon.style.backgroundImage = Resources.Load<Texture2D>("img/" + question.answer);
+            questionIcon.userData = question;
+            //questionIcon.style.display = DisplayStyle.Flex;
+            
+            currentIconIndex++;
+        }
     }
 }
