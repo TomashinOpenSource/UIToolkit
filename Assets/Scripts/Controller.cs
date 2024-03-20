@@ -5,7 +5,7 @@ using UnityEngine;
 public class Controller : MonoBehaviour
 {
     public Game game;
-    //public UI ui;
+    public UI ui;
 
     public void Initialize()
     {
@@ -27,6 +27,8 @@ public class Controller : MonoBehaviour
     
     public void UpdateUI()
     {
-        
+        ui.SetHint(game.getCurrentHint());
+        ui.SetHintNum(game.getCurrentHintNum());
+        ui.SetQuestionNumber(game.getCurrentQuestionNum());
     }
 }
