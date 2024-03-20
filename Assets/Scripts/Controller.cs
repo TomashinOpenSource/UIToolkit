@@ -33,7 +33,8 @@ public class Controller : MonoBehaviour
     
     public void CheckAnswer(string answer)
     {
-        if (game.IsAnswerCorrect(answer))
+        bool isCorrect = game.IsAnswerCorrect(answer);
+        if (isCorrect)
         {
             HandleCorrectAnswer();
             Debug.Log("Answer is correct!");
@@ -43,6 +44,8 @@ public class Controller : MonoBehaviour
             HandleWrongAnswer();
             Debug.Log("Answer is wrong!");
         }
+        
+        ui.GiveAnswerFeedback(isCorrect);
     }
     
     public void UpdateUI()

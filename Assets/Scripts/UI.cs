@@ -30,6 +30,8 @@ public class UI : MonoBehaviour
         answer_indicator = root.Q<Label>("AnswerIndicator");
         highscoreLabel = root.Q<Label>("Highscore");
         currentscoreLabel = root.Q<Label>("Myscore");
+        
+        answer_indicator.style.visibility = Visibility.Hidden;
 
         Initialize();
     }
@@ -41,6 +43,29 @@ public class UI : MonoBehaviour
         };
         Setup.InitializeDragDrop(root, controller);
         Setup.InitializeIcons(root, controller.getAllQuestions());
+    }
+    
+    public void GiveAnswerFeedback(bool isCorrect)
+    {
+        answer_indicator.style.visibility = Visibility.Visible;
+        answer_indicator.text = isCorrect ? "Your answer was correct!" : "Your answer was wrong!";
+
+        StyleColor colorCorrect = new StyleColor(new Color32(0, 132, 19, 255));
+        StyleColor colorWrong = new StyleColor(new Color32(132, 0, 19, 255));
+
+        answer_indicator.style.color = isCorrect ? colorCorrect : colorWrong;
+        
+        StartCoroutine(CleanUpQuestion());
+    }
+    private IEnumerator CleanUpQuestion()
+    {
+        yield return new WaitForSeconds(3);
+        answer_indicator.style.visibility = Visibility.Hidden;
+        VisualElement dropZone = root.Q("DropBox");
+        if (dropZone.childCount > 0)
+        {
+            dropZone.RemoveAt(0);
+        }
     }
 
     public void SetHint(string hintText)
